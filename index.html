@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jo • Links</title>
+  <meta name="description" content="All my links in one place" />
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Jo • Links" />
+  <meta property="og:description" content="All my links in one place" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Jo+Links" />
+  <style>
+    :root { --bg:#0b0c10; --card:#14161a; --text:#e8edf2; --muted:#9aa4b2; --accent:#7dd3fc; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0c10,#0e1116);}
+    .wrap{max-width:640px;margin:0 auto;padding:48px 20px;display:flex;flex-direction:column;gap:20px;align-items:center}
+    .card{width:100%;background:var(--card);border:1px solid #1e2126;border-radius:18px;padding:22px}
+    .avatar{width:86px;height:86px;border-radius:50%;border:2px solid #1f2329;object-fit:cover}
+    h1{color:var(--text);font-size:28px;margin:14px 0 6px}
+    p{color:var(--muted);margin:0 0 10px}
+    .links{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+    .link{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;
+      background:#111319;border:1px solid #1c2026;text-decoration:none;color:var(--text);font-weight:600;transition:transform .05s ease, border-color .2s ease}
+    .link:hover{transform:translateY(-1px);border-color:#2a3139}
+    .link small{color:var(--muted);font-weight:500}
+    .badge{margin-left:auto;font-size:12px;color:#071018;background:var(--accent);border-radius:999px;padding:.25rem .55rem}
+    footer{color:#687385;font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200" alt="Avatar" />
+    <div class="card" style="text-align:center">
+      <h1>Jo</h1>
+      <p>Building fitness & macro apps • Kotlin / C# • Always learning</p>
+    </div>
+
+    <div class="links" aria-label="Primary links">
+      <a class="link" href="https://instagram.com/iron_aesthetix" target="_blank" rel="noopener">
+        📸 Instagram <small>@iron_aesthetix</small><span class="badge">Follow</span>
+      </a>
+      <a class="link" href="https://tiktok.com/@iron_aesthetix" target="_blank" rel="noopener">
+        🎵 TikTok <small>@iron_aesthetix</small>
+      </a>
+      <a class="link" href="https://github.com/youruser" target="_blank" rel="noopener">
+        💻 GitHub <small>projects & code</small>
+      </a>
+      <a class="link" href="mailto:you@example.com" target="_blank" rel="noopener">
+        ✉️ Email <small>you@example.com</small>
+      </a>
+      <a class="link" href="https://your.site" target="_blank" rel="noopener">
+        🌐 Website <small>portfolio</small>
+      </a>
+    </div>
+
+    <footer>© <span id="y"></span> Jo • Made without Linktree</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
